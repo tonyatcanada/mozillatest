@@ -29,25 +29,29 @@
     <div class="further-info">
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
-            <img srcset="firefox_logo-400.png 400w, firefox-addons 120.jpg 120w"
+            <img srcset="firefox_logo-400.png 400w, firefox_logo-120.png 120w"
                  sizes="(max-width: 480px) 120px, 400px"
-                        src="firefox_logo-400.png"
-                        alt="firefox logo">
+                 src="firefox_logo-400.png"
+                 alt="firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
             <source media="(min-width: 480)" srcset="mozilla-dinosaur400.png">
-            <source media="(max-width: 479)" srcset="mozilla-dinosaur-120.png.jpg">
-            <img src="mozilla-dinosaur400.png" alt="mozilla dinosaur">
+            <source media="(max-width: 479)" srcset="mozilla-dinosaur-120.png">
+            <img srcset="mozilla-dinosaur400.png 400w, mozilla-dinosaur-120.png 120w"
+                 sizes="(max-width: 480px) 120px, 400px"
+                 src="mozilla-dinosaur400.png"
+                 alt="mozilla dinosaur">
         </a>
         <a href="https://addons.mozilla.org/">
-            <source media="(min-width: 480)" srcset="firefox-addons400.jpg">
-            <source media="(max-width: 479)" srcset="firefox-addons 120.jpg">
-            <img src="firefox-addons400.jpg" alt="firefox addons">
+            <img srcset="firefox-addons400.jpg 400w, firefox-addons120.jpg 120w"
+                 sizes="(max-width: 480px) 120px, 400px"
+                 src="firefox-addons400.jpg"
+                 alt="firefox addons">
         </a>
         <a href="https://developer.mozilla.org/zh-CN/">
             <source media="(min-width: 480)" srcset="mdn.svg">
             <source media="(max-width: 479)" srcset="mdn.svg">
-            <img src="mdn.svg" alt="mdn">
+            <img src="mdn.svg" alt="mdn" />
         </a>
         <div class="clearfix"></div>
     </div>
@@ -55,7 +59,8 @@
     <div class="red-panda">
         <!-- 插入照片元素 -->
         <picture>
-            <source media="(max-width: 599)" srcset="red-panda600w.jpg">
+            <source media="(max-width: 599px)" srcset="red-panda600w.jpg">
+            <source media="(min-width: 600px)" srcset="red-panda1200.jpg">
             <img src="red-panda.jpg" alt="red-panda">
         </picture>
     </div>
